@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새 테스트</title>
+    <link rel="stylesheet" href="../../styles/css/common.css">
+    <link rel="stylesheet" href="../../styles/css/pretendard-subset.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="mobile">
+            <div id="page_wrap" class="bird_test test_main">
+                <header>
+                    <div class="left_area">
+                    </div>
+                    <div class="right_area">
+                        <a href="javascript:void();" class="menu_button" onclick="$('#my_modal').toggle();">
+                            <span class="ico_header ico_header_menu"></span>
+                        </a>
+                    </div>
+                </header>
+                <section>
+                    <div class="title_area">
+                        <div class="sub">내가 새라면 어떤 새일까?</div>
+                        <h2 class="title yuji">새 테스트</h2>
+                    </div>
+                    <div class="img_wrap">
+                        <img src="../../styles/images/bird/main-01.png" alt="새 테스트 메인 이미지">
+                    </div>
+                    <!-- 참여자 수 -->
+                    <div class="cont_block ">
+                        <div class="title">자신이 어떤 새 인지 알아본 사람</div>
+                        <div class="content">
+                            <div class="test_cnt yuji">99,999,999</div>
+                        </div>
+                    </div>
+                    <!-- // 참여자 수 -->
+                    <!-- 공유 영역 -->
+                    <div class="cont_block share">
+                        <div class="title">친구한테도 알려주기</div>
+                        <div class="content">
+                            <button class="btn_type_a btn_color_04">
+                                <span class="ico_btn ico_btn_url"></span>
+                                <span class="btn_txt">URL</span>
+                            </button>
+                            <button class="btn_type_a btn_color_02">
+                                <span class="ico_btn ico_btn_kakao"></span>
+                                <span class="btn_txt">카카오</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- // 공유 영역 -->
+                    <div class="cont_block">
+                        <div class="content">
+                            <a href="./bird_test.html" class="btn_type_b w100 btn_color_01">
+                                <span class="btn_txt">테스트 시작하기</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 로그인 안한 모달 -->
+            <div id="login_popup" class="layer_popup">
+                <div class="layer_wrap">
+                    <div class="layer_body">
+                        <div class="layer_cont">
+                            <div class="title_area">
+                                <div class="sub">결과를 저장하시려면</div>
+                                <a href="#" class="btn_login">
+                                    <span class="btn_txt">로그인</span>
+                                    <span class="ico_btn ico_btn_arr_right_24"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="layer_cont">
+                            <div class="sub">아직 회원이 아니세요?</div>
+                            <a href="#" class="btn_signin btn_type_c w100 btn_color_02">
+                                <span class="btn_txt">카카오톡으로 친구 초대하기</span>
+                            </a>
+                            <a href="#" class="btn_signin btn_type_c w100 btn_color_03">
+                                <span class="btn_txt">구글 계정으로 시작하기</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer_blur"></div>
+            </div>
+            <!-- // 로그인 안한 모달 -->
+            <!-- 로그인 한 모달 -->
+            <div id="my_modal" class="layer_popup">
+                <div class="layer_wrap">
+                    <div class="layer_body">
+                        <div class="layer_cont">
+                            <div class="title_area">
+                                <div class="sub">반가워요!</div>
+                                <div class="nickname">
+                                    <span class="name">닉네임이들어가는곳닉네임이들어가는곳</span>
+                                    <span class="m">님</span>
+                                </div>
+                            </div>
+                            <ul class="menu_list">
+                                <li class="menu_item">
+                                    <a href="../common/result_list.html"><span>내 테스트 결과</span></a>
+                                </li>
+                                <li class="menu_item">
+                                    <a href="../common/setting.html"><span>내 정보 설정</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="layer_cont">
+                            <div class="sub">친구와 테스트 결과를 비교해보세요!</div>
+                            <a href="#" class="btn_signin btn_type_c w100 btn_color_02">
+                                <span class="btn_txt">카카오톡으로 친구 초대하기</span>
+                            </a>
+                            <a href="#" class="btn_signin btn_type_c w100 btn_color_04">
+                                <span class="btn_txt">URL로 친구 초대하기</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer_blur"></div>
+            </div>
+            <!-- // 로그인 한 모달 -->
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
