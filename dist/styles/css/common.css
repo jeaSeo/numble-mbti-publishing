@@ -829,4 +829,10 @@ section .title_area .title {
   width: 24px;
   height: 24px;
   background-position: -30px -90px;
+}
+
+@media screen and (max-width: 768px) {
+  #mobile {
+    width: 100%;
+  }
 }/*# sourceMappingURL=common.css.map */
