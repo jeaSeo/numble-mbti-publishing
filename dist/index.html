@@ -12,11 +12,10 @@
 <body>
     <div id="wrap">
         <div id="mobile">
-            <div id="page_wrap">
+            <div id="page_wrap" class="main">
                 <header>
                     <div class="gnb">
                         <div class="left_area">
-                            <h1 class="logo">로고</h1>
                         </div>
                         <div class="right_area">
                             <a href="javascript:void();" class="menu_button" onclick="$('#my_modal').toggle();">
@@ -24,30 +23,38 @@
                             </a>
                         </div>
                     </div>
+                    <div class="title_area">
+                        <h5 class="title">테스트 전체보기</h5>
+                    </div>
                 </header>
                 <section>
-                    <div class="title_area">
-                        <span class="title">제목영역</span>
-                    </div>
                     <div class="contents_area">
                         <div class="content_item">
-                            <a href="./pages/bird/bird_main.html">새 테스트</a>
+                            <a href="./pages/bird/bird_main.html">
+                                <div class="img_wrap">
+                                    <img src="./styles/images/bird/test/01.png" alt="새 테스트 소개 이미지">
+                                </div>
+                                <div class="title_area">
+                                    <div class="sub">내가 새라면 어떤 새일까?</div>
+                                    <div class="title">새 테스트새 테스트새 테스트새 테스트새 테스트</div>
+                                    <div class="cnt">9,999명 참여 중!</div>
+                                </div>
+                            </a>
                         </div>
                         <div class="content_item">
-                            <a href="./pages/bird/bird_main.html">새 테스트</a>
+                            <a href="./pages/bird/bird_main.html">
+                                <div class="img_wrap">
+                                    <img src="./styles/images/bird/test/01.png" alt="새 테스트 소개 이미지">
+                                </div>
+                                <div class="title_area">
+                                    <div class="sub">내가 새라면 어떤 새일까?</div>
+                                    <div class="title">새 테스트</div>
+                                    <div class="cnt">9,999명 참여 중!</div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </section>
-                <section>
-                    <div class="title_area">
-                        <span class="title">제목영역</span>
-                    </div>
-                    <div class="contents_area">
-                        <div class="content_item">이러쿵</div>
-                        <div class="content_item">저러쿵</div>
-                    </div>
-                </section>
-                <footer></footer>
             </div>
             <!-- 로그인 안한 모달 -->
             <div id="login_popup" class="layer_popup">
@@ -65,9 +72,11 @@
                         <div class="layer_cont">
                             <div class="sub">아직 회원이 아니세요?</div>
                             <a href="#" class="btn_signin btn_type_c w100 btn_color_02">
+                                <span class="ico_btn ico_btn_kakao"></span>
                                 <span class="btn_txt">카카오톡으로 친구 초대하기</span>
                             </a>
                             <a href="#" class="btn_signin btn_type_c w100 btn_color_03">
+                                <span class="ico_btn ico_btn_google"></span>
                                 <span class="btn_txt">구글 계정으로 시작하기</span>
                             </a>
                         </div>
@@ -100,6 +109,7 @@
                         <div class="layer_cont">
                             <div class="sub">친구와 테스트 결과를 비교해보세요!</div>
                             <a href="#" class="btn_signin btn_type_c w100 btn_color_02">
+                                <span class="ico_btn ico_btn_kakao"></span>
                                 <span class="btn_txt">카카오톡으로 친구 초대하기</span>
                             </a>
                             <a href="#" class="btn_signin btn_type_c w100 btn_color_04">
