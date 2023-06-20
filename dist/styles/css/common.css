@@ -344,7 +344,8 @@ section .title_area .title {
   margin-bottom: 38px;
   position: relative;
 }
-.edit_info .input_wrap .char_cnt {
+.edit_info .input_wrap .char_cnt,
+.edit_info .input_wrap .email_check {
   position: absolute;
   font-size: 14px;
   bottom: -30px;
@@ -354,6 +355,25 @@ section .title_area .title {
 }
 .edit_info .input_wrap .char_cnt .limit:before {
   content: "/";
+}
+.edit_info .input_wrap .email_check {
+  display: none;
+}
+.edit_info .input_wrap .email_check .txt {
+  margin-left: 4px;
+  vertical-align: middle;
+}
+.edit_info .input_wrap .email_check.ok, .edit_info .input_wrap .email_check.error {
+  display: block;
+}
+.edit_info .input_wrap .email_check.ok .txt {
+  color: #1FB02D;
+}
+.edit_info .input_wrap .email_check.error .txt {
+  color: #FF1F1A;
+}
+.edit_info .input_wrap .email_check.error .ico_setting {
+  background-position-x: -30px;
 }
 .edit_info .btn_del {
   width: 44px;
@@ -1021,6 +1041,28 @@ section .title_area .title {
   width: 16px;
   height: 16px;
   background-position: left -120px;
+}
+
+.ico_setting {
+  vertical-align: middle;
+  display: inline-block;
+  background: url(../images/ico_setting.png) no-repeat;
+  background-size: 100px;
+}
+.ico_setting_check {
+  width: 16px;
+  height: 16px;
+  background-position: left top;
+}
+.ico_setting_ok {
+  width: 16px;
+  height: 16px;
+  background-position: left top;
+}
+.ico_setting_bad {
+  width: 16px;
+  height: 16px;
+  background-position: -30px top;
 }
 
 @media screen and (max-width: 768px) {

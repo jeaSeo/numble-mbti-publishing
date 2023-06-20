@@ -305,16 +305,49 @@ section {
         margin-bottom: 38px;
         position: relative;
 
-        .char_cnt {
+        .char_cnt,
+        .email_check {
             position: absolute;
             font-size: 14px;
             bottom: -30px;
-
+        }
+        
+        .char_cnt {
             .limit {
                 color: $des-font-color;
 
                 &:before {
                     content: '/';
+                }
+            }
+        }
+
+        .email_check {
+            display: none;
+
+            .txt {
+                margin-left: 4px;
+                vertical-align: middle;
+            }
+
+            &.ok,
+            &.error {
+                display: block;
+            }
+
+            &.ok {
+                .txt {
+                    color: #1FB02D;
+                }
+            }
+
+            &.error {
+                .txt {
+                    color: #FF1F1A;
+                }
+
+                .ico_setting {
+                    background-position-x: -30px;
                 }
             }
         }
@@ -1063,6 +1096,31 @@ section {
         width: 16px;
         height: 16px;
         background-position: left -120px;
+    }
+}
+
+.ico_setting {
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../images/ico_setting.png) no-repeat;
+    background-size: 100px;
+
+    &_check {
+        width: 16px;
+        height: 16px;
+        background-position: left top;
+    }
+
+    &_ok {
+        width: 16px;
+        height: 16px;
+        background-position: left top;
+    }
+
+    &_bad {
+        width: 16px;
+        height: 16px;
+        background-position: -30px top;
     }
 }
 

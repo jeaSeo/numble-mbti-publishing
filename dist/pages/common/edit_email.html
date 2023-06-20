@@ -33,6 +33,17 @@
                         <button class="btn_type_d btn_del">
                             <span class="ico_btn ico_btn_del"></span>
                         </button>
+                        <!-- 
+                            메일 유효성 확인
+                            .email_check        => default, message hidden
+                            .email_check.ok     => message visible, 정상 이메일
+                            .email_check.error  => message visible, 수정필요 이메일
+                        -->
+                        <span class="email_check error">
+                            <span class="ico_setting ico_setting_check"></span>
+                            <span class="txt">이메일을 확인해주세요.</span>
+                        </span>
+                        <!-- //메일 유효성 확인 -->
                     </div>
                     <!-- 변경되면 버튼 색상을 btn_color_01로 바꿔주세욥 -->
                     <button class="btn_save btn_type_b w100 btn_color_04">
@@ -42,13 +53,5 @@
             </div>
         </div>
     </div>
-    <script>
-        $('.img_slider').slick({
-            dots: true,
-            speed: 300,
-            slidesToShow: 1,
-            centerMode: true
-        });
-    </script>
 </body>
 </html>
