@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "yuji";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff") format("woff");
@@ -7,7 +8,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Pretendard";
+  font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
   line-height: 1.4;
   letter-spacing: -0.02em;
 }
@@ -67,7 +68,7 @@ p {
 }
 
 .btn_txt {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .yuji {
@@ -104,14 +105,11 @@ p {
 
 #mobile {
   width: 375px;
-  height: 100vh;
   position: relative;
 }
 
 #page_wrap {
   width: 100%;
-  height: 100%;
-  overflow-y: auto;
   position: relative;
   border-radius: 8px;
 }
@@ -156,9 +154,10 @@ header .gnb .left_area {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
+  padding-left: 10px;
 }
 header .gnb .left_area h6 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -174,7 +173,7 @@ header .title_area {
   flex: 1;
 }
 header .title_area .title {
-  font-size: 24px;
+  font-size: 1.5rem;
   padding: 8px 10px 12px;
 }
 header .logo {
@@ -256,12 +255,13 @@ section .title_area .title {
   -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
   align-items: flex-start;
+  padding: 8px 0;
   margin-left: 24px;
   max-width: calc(100% - 90px);
 }
 .main .content_item .title {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   display: block;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -271,12 +271,12 @@ section .title_area .title {
 .main .content_item .sub {
   color: #0079e3;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-bottom: 4px;
 }
 .main .content_item .cnt {
   color: #999;
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-top: 2px;
 }
 .main .content_item + .content_item {
@@ -305,14 +305,14 @@ section .title_area .title {
 }
 .edit_info .title_area .title {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .edit_info .title_area .title + .sub {
   margin-top: 8px;
 }
 .edit_info .title_area .sub {
   color: #999;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .edit_info [type=text] {
   min-height: 20px;
@@ -347,7 +347,7 @@ section .title_area .title {
 .edit_info .input_wrap .char_cnt,
 .edit_info .input_wrap .email_check {
   position: absolute;
-  font-size: 14px;
+  font-size: 0.875rem;
   bottom: -30px;
 }
 .edit_info .input_wrap .char_cnt .limit {
@@ -402,21 +402,25 @@ section .title_area .title {
   flex-direction: column;
 }
 .bird_test.test_main .title_area .sub {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .bird_test.test_main .title_area .title {
   margin-top: 8px;
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 .bird_test.test_main .img_wrap {
   padding: 16px 8px 0;
+}
+.bird_test.test_main .img_wrap img {
+  width: 60%;
+  display: inline;
 }
 .bird_test.test_main .share {
   padding: 0 32px;
 }
 
 .bird_test .cont_block:first-child {
-  margin-top: 48px;
+  margin-top: 32px;
 }
 .bird_test .img_wrap {
   text-align: center;
@@ -424,7 +428,7 @@ section .title_area .title {
 }
 .bird_test .test_cnt {
   color: #0079e3;
-  font-size: 32px;
+  font-size: 2rem;
 }
 .bird_test [class^=btn] + [class^=btn] {
   margin-top: 16px;
@@ -436,17 +440,18 @@ section .title_area .title {
   margin-top: 72px;
 }
 .bird_test.test_page .title {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .bird_test.test_page .total:before {
   content: "/ ";
 }
 .bird_test.test_page .img_wrap img {
   width: 80%;
+  display: inline;
 }
 .bird_test.test_page .question {
   margin: 8px 0 24px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .bird_test.test_analysis header {
@@ -458,24 +463,24 @@ section .title_area .title {
   transform: translateY(calc(-50% - 30px));
 }
 .bird_test.test_analysis .title {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .bird_test.bird_result {
   background-color: #fff;
 }
 .bird_test.bird_result .title_area {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .bird_test.bird_result .title_area .img_wrap {
-  width: 80%;
-  padding-bottom: 0;
+  width: 60%;
+  padding: 32px 0 16px;
 }
 .bird_test.bird_result .title_area + .cont_block {
   margin-top: 0;
 }
 .bird_test.bird_result .title_area + .cont_block .yuji {
-  font-size: 48px;
+  font-size: 3rem;
   margin-top: 8px;
   line-height: 1.4;
 }
@@ -492,7 +497,7 @@ section .title_area .title {
 }
 .cont_block .title {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .cont_block .title + .content {
   margin-top: 16px;
@@ -516,7 +521,7 @@ section .title_area .title {
   text-align: left;
 }
 .type_point_type_01 .point_item {
-  font-size: 16px;
+  font-size: 1rem;
   padding-left: 24px;
   position: relative;
 }
@@ -528,7 +533,7 @@ section .title_area .title {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-color: red;
+  background: url(../images/bullet.svg) no-repeat;
   position: absolute;
   top: 3px;
   left: 0;
@@ -559,7 +564,7 @@ section .title_area .title {
   justify-content: center;
   flex: 1 0 calc(33.3% - 5px);
   flex-direction: column;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 16px;
   font-weight: 500;
   box-sizing: border-box;
@@ -591,7 +596,7 @@ section .title_area .title {
   width: calc(50% - 8px);
   background-color: #f6f6f6;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   padding: 24px 16px;
   box-sizing: border-box;
@@ -601,6 +606,7 @@ section .title_area .title {
 .type_point_type_03 .point_item img {
   width: 32px;
   margin-bottom: 8px;
+  display: inline;
 }
 .type_point_type_03 .point_item strong {
   min-height: 40px;
@@ -615,7 +621,7 @@ section .title_area .title {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .type_match .match_item {
   width: calc(50% - 8px);
@@ -701,7 +707,7 @@ section .title_area .title {
 }
 .result_list .title_list .date {
   color: #999;
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-bottom: 2px;
 }
 .result_list .title_list .name {
@@ -719,7 +725,7 @@ section .title_area .title {
 }
 .title_list .title {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 16px 8px;
 }
 .title_list .title.sub {
@@ -811,14 +817,14 @@ section .title_area .title {
   border-top: 1px solid #e0e0e0;
 }
 .layer_popup .sub {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .layer_popup .btn_login .btn_txt {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .layer_popup .nickname {
-  font-size: 24px;
+  font-size: 1.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -850,7 +856,7 @@ section .title_area .title {
 }
 .layer_popup .menu_list .menu_item {
   width: calc(50% - 8px);
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #999;
 }
 .layer_popup .menu_list .menu_item + .menu_item {
@@ -882,7 +888,7 @@ section .title_area .title {
   text-align: center;
 }
 .btn_type_c .btn_txt {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .btn_type_d {
   display: inline-block;
@@ -956,6 +962,9 @@ section .title_area .title {
   padding: 24px 0;
   margin-top: 0;
 }
+.btn_link .btn_txt + [class^=ico] {
+  margin-left: 4px;
+}
 
 .info_rights {
   border: 1px solid #e0e0e0;
@@ -964,7 +973,7 @@ section .title_area .title {
   text-align: left;
 }
 .info_rights .desc {
-  font-size: 12px;
+  font-size: 0.75rem;
   margin-top: 8px;
   color: #999;
 }

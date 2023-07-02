@@ -14,7 +14,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Pretendard';
+    font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
     line-height: 1.4;
     letter-spacing: -.02em;
 }
@@ -77,7 +77,7 @@ p {
 }
 
 .btn_txt {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .yuji {
@@ -102,14 +102,14 @@ p {
 
 #mobile {
     width: 375px;
-    height: 100vh;
+    // height: 100vh;
     position: relative;
 }
 
 #page_wrap {
     width: 100%;
-    height: 100%;
-    overflow-y: auto;
+    // height: 100%;
+    // overflow-y: auto;
     position: relative;
     border-radius: 8px;
 }
@@ -132,9 +132,10 @@ header {
         .left_area {
             @include display-flex;
             @include align-items(center);
+            padding-left: 10px;
 
             h6 {
-                font-size: 18px;
+                font-size: 1.125rem;
                 font-weight: 400;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -155,7 +156,7 @@ header {
         flex: 1;
 
         .title {
-            font-size: 24px;
+            font-size: 1.5rem;
             padding: 8px 10px 12px;
         }
     }
@@ -219,13 +220,14 @@ section {
         .title_area {
             @include flex(1);
             @include align-items(flex-start);
+            padding: 8px 0;
             margin-left: 24px;
             max-width: calc(100% - 90px);
         }
 
         .title {
             font-weight: 500;
-            font-size: 24px;
+            font-size: 1.5rem;
             display: block;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -236,13 +238,13 @@ section {
         .sub {
             color: $primary-color;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 0.875rem;
             margin-bottom: 4px;
         }
 
         .cnt {
             color: $des-font-color;
-            font-size: 14px;
+            font-size: 0.875rem;
             margin-top: 2px;
         }
 
@@ -267,7 +269,7 @@ section {
 
         .title {
             font-weight: 500;
-            font-size: 24px;
+            font-size: 1.5rem;
 
             + .sub {
                 margin-top: 8px;
@@ -276,7 +278,7 @@ section {
 
         .sub {
             color: $des-font-color;
-            font-size: 14px;
+            font-size: 0.875rem;
         }
     }
 
@@ -308,7 +310,7 @@ section {
         .char_cnt,
         .email_check {
             position: absolute;
-            font-size: 14px;
+            font-size: 0.875rem;
             bottom: -30px;
         }
         
@@ -381,17 +383,22 @@ section {
             flex-direction: column;
     
             .sub {
-                font-size: 16px;
+                font-size: 1rem;
             }
 
             .title {
                 margin-top: 8px;
-                font-size: 60px;
+                font-size: 3.75rem;
             }
         }
 
         .img_wrap {
             padding: 16px 8px 0;
+
+            img {
+                width: 60%;
+                display: inline;
+            }
         }
 
         .share {
@@ -400,7 +407,8 @@ section {
     }
 
     .cont_block:first-child {
-        margin-top: 48px;
+        // margin-top: 48px;
+        margin-top: 32px;
     }
 
     .img_wrap {
@@ -410,7 +418,7 @@ section {
 
     .test_cnt {
         color: $primary-color;
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     [class^=btn] + [class^=btn] {
@@ -427,7 +435,7 @@ section {
         }
 
         .title {
-            font-size: 24px;
+            font-size: 1.5rem;
         }
 
         .total {
@@ -438,11 +446,12 @@ section {
 
         .img_wrap img {
             width: 80%;
+            display: inline;
         }
 
         .question {
             margin: 8px 0 24px;
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
 
@@ -458,7 +467,7 @@ section {
         }
 
         .title {
-            font-size: 24px;
+            font-size: 1.5rem;
         }
     }
 
@@ -466,18 +475,18 @@ section {
         background-color: #fff;
 
         .title_area {
-            font-size: 18px;
+            font-size: 1.125rem;
             
             .img_wrap {
-                width: 80%;
-                padding-bottom: 0;
+                width: 60%;
+                padding: 32px 0 16px;
             }
 
             + .cont_block {
                 margin-top: 0;
 
                 .yuji {
-                    font-size: 48px;
+                    font-size: 3rem;
                     margin-top: 8px;
                     line-height: 1.4;
                 }
@@ -502,7 +511,7 @@ section {
 
     .title {
         font-weight: 500;
-        font-size: 16px;
+        font-size: 1rem;
 
         + .content {
             margin-top: 16px;
@@ -539,7 +548,7 @@ section {
         text-align: left;
     
         .point_item {
-            font-size: 16px;
+            font-size: 1rem;
             padding-left: 24px;
             position: relative;
     
@@ -552,7 +561,7 @@ section {
                 display: inline-block;
                 width: 16px;
                 height: 16px;
-                background-color: red;
+                background: url(../images/bullet.svg) no-repeat;
                 position: absolute;
                 top: 3px;
                 left: 0;
@@ -569,7 +578,7 @@ section {
             @include justify-content(center);
             flex: 1 0 calc(33.3% - 5px);
             flex-direction: column;
-            font-size: 14px;
+            font-size: 0.875rem;
             padding: 16px;
             font-weight: 500;
             box-sizing: border-box;
@@ -592,7 +601,7 @@ section {
             width: calc(50% - 8px);
             background-color: #f6f6f6;
             border-radius: 8px;
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: 500;
             padding: 24px 16px;
             box-sizing: border-box;
@@ -602,6 +611,7 @@ section {
             img {
                 width: 32px;
                 margin-bottom: 8px;
+                display: inline;
             }
 
             strong {
@@ -616,7 +626,7 @@ section {
 // 다른 유형과의 조합
 .type_match {
     @include display-flex;
-    font-size: 14px;
+    font-size: 0.875rem;
     
     .match_item {
         width: calc(50% - 8px);
@@ -726,7 +736,7 @@ section {
     
         .date {
             color: #999;
-            font-size: 14px;
+            font-size: 0.875rem;
             margin-bottom: 2px;
         }
         
@@ -751,7 +761,7 @@ section {
     
     .title {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 0.875rem;
         padding: 16px 8px;
 
         &.sub {
@@ -844,19 +854,19 @@ section {
     }
 
     .sub {
-        font-size: 14px;
+        font-size: 0.875rem;
         // color: $des-font-color;
     }
 
     .btn_login {
         .btn_txt {
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 500;
         }
     }
 
     .nickname {
-        font-size: 24px;
+        font-size: 1.5rem;
         @include display-flex;
 
         .name {
@@ -878,7 +888,7 @@ section {
 
         .menu_item {
             width: calc(50% - 8px);
-            font-size: 14px;
+            font-size: 0.875rem;
             color: $des-font-color;
 
             + .menu_item {
@@ -918,7 +928,7 @@ section {
         text-align: center;
 
         .btn_txt {
-            font-size: 14px;
+            font-size: 0.875rem;
         }
     }
 
@@ -995,6 +1005,10 @@ section {
 .btn_link {
     padding: 24px 0;
     margin-top: 0;
+
+    .btn_txt + [class^=ico] {
+        margin-left: 4px;
+    }
 }
 
 // 저작권관련
@@ -1005,7 +1019,7 @@ section {
     text-align: left;
 
     .desc {
-        font-size: 12px;
+        font-size: 0.75rem;
         margin-top: 8px;
         color: $des-font-color;
     }
