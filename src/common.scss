@@ -102,14 +102,15 @@ p {
 
 #mobile {
     width: 375px;
-    // height: 100vh;
+    height: 100vh;
     position: relative;
 }
 
 #page_wrap {
     width: 100%;
     // height: 100%;
-    // overflow-y: auto;
+    height: calc(100% - 58px);
+    overflow-y: auto;
     position: relative;
     border-radius: 8px;
 }
